@@ -1,6 +1,6 @@
 # KS Cookie Bridge
 
-为配套研发页面提供 `kuaishou.com` 及其子域的 Cookie 查询能力。当前本地包版本：**1.0.1**。
+为配套研发页面提供 `kuaishou.com`、`gifshow.com` 及其子域和 `localhost` 的 Cookie 查询能力。当前本地包版本：**1.0.2**。
 
 本仓库保存公开说明、隐私政策与 Chrome Web Store 素材，不包含扩展源码或真实 Cookie。
 
@@ -28,3 +28,4 @@
 ## 发布状态
 
 资料页不表示 Chrome Web Store 已审核或上线。条目 ID：`cblnfmpmedieiobmebooiefhjiolnbab`。改名与权限变化需上传新版 ZIP 后才会反映到商店草稿。完整配套业务仍需补充用户功能和数据流说明。
+

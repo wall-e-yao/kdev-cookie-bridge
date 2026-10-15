@@ -1,8 +1,8 @@
-# Chrome Web Store 隐私字段 — KS Cookie Bridge 1.0.1
+# Chrome Web Store 隐私字段 — KS Cookie Bridge 1.0.2
 
 ## 单一用途说明
 
-为配套研发页面提供 kuaishou.com 及其子域的 Cookie 查询桥接能力。页面指定 URL 或域名，扩展查询获授权范围内的 Cookie 并返回结果。需要配套页面及相应平台账号和网络访问条件。提交前还应补充实际用户可见的业务功能及操作入口。
+为配套研发页面提供 kuaishou.com、gifshow.com 及其子域和 localhost 的 Cookie 查询桥接能力。页面指定 URL 或域名，扩展查询获授权范围内的 Cookie 并返回结果。需要配套页面及相应平台账号和网络访问条件。提交前还应补充实际用户可见的业务功能及操作入口。
 
 ## 需请求 cookies 的理由
 
@@ -10,7 +10,7 @@
 
 ## 需请求主机权限的理由
 
-Chrome Cookie API 需要对应站点的主机权限。本版本仅申请 kuaishou.com 及其子域，并在匹配页面加载查询桥接脚本；不包含 gifshow.com、localhost 或其他站点。应结合实际业务确认能否进一步收窄到具体主机。
+Chrome Cookie API 需要对应站点的主机权限。本版本申请 kuaishou.com、gifshow.com 及其子域和 localhost，并在这些匹配页面加载查询桥接脚本。kuaishou.com 与 gifshow.com 用于配套站点的 Cookie 查询；localhost 用于本地配套页面及开发调试。localhost 不自动包含 127.0.0.1。应结合实际业务确认能否进一步收窄到具体主机。
 
 ## 远程代码
 
@@ -31,3 +31,4 @@ Chrome Cookie API 需要对应站点的主机权限。本版本仅申请 kuaisho
 备用 Markdown：https://github.com/wall-e-yao/kdev-cookie-bridge/blob/main/PRIVACY.md
 
 仅在地址验证可公开访问后填写。
+

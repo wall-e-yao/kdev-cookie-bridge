@@ -1,13 +1,13 @@
 # KS Cookie Bridge 隐私政策
 
 生效日期：2026 年 10 月 15 日  
-适用版本：1.0.1  
+适用版本：1.0.2  
 开发者：wall-e-yao（商店发布者：yaohao03）  
 联系邮箱：yaohao971112@gmail.com
 
 ## 1. 用途与范围
 
-KS Cookie Bridge 为配套研发网页提供 Cookie 查询能力。匹配页面通过 `window.getCookies(url, domain)` 查询 `kuaishou.com` 及其子域的 Cookie。扩展需要配套网页、相应平台账号和网络条件，不是独立的研发平台。
+KS Cookie Bridge 为配套研发网页提供 Cookie 查询能力。匹配页面通过 `window.getCookies(url, domain)` 查询 `kuaishou.com`、`gifshow.com` 及其子域和 `localhost` 的 Cookie。扩展需要配套网页、相应平台账号和网络条件，不是独立的研发平台。
 
 本政策说明扩展自身的数据访问和交付。Cookie 返回网页后，该页面及其运营方的进一步处理还受该网站适用的隐私政策约束。请只在信任的页面和脚本环境中使用。
 
@@ -15,13 +15,13 @@ KS Cookie Bridge 为配套研发网页提供 Cookie 查询能力。匹配页面�
 
 扩展处理请求中的目标 URL、域名，以及 Chrome Cookie API 返回的 Cookie 名称、值、所属域、路径、有效期、Secure、HttpOnly、SameSite 等属性。Cookie 值可能包含登录会话、认证凭证、账号标识、偏好设置或其他网站保存的信息。
 
-查询受 Chrome 主机权限限制，仅涉及 `kuaishou.com` 及其子域，不包含 `gifshow.com`、`localhost` 或其他站点。当前版本不按具体 Cookie 名称过滤结果。
+查询受 Chrome 主机权限限制，仅涉及 `kuaishou.com`、`gifshow.com` 及其子域和 `localhost`。localhost 用于本地配套页面与开发调试，不自动包含 127.0.0.1 或其他回环地址。当前版本不按具体 Cookie 名称过滤结果。
 
 扩展没有调用浏览历史 API，也没有专门记录鼠标、键盘、滚动、页面正文或通信内容的功能。Cookie 本身仍可能包含个人数据，不应被视为不敏感信息。
 
 ## 3. 查询发生的时机
 
-安装并启用后，桥接脚本在匹配的 kuaishou.com 及其子域页面加载。页面通过查询接口发起请求时，扩展才执行 Cookie 查询。当前版本没有每次查询的额外确认弹窗，匹配页面中的脚本能够发起请求。
+安装并启用后，桥接脚本在匹配的 kuaishou.com、gifshow.com 及其子域和 localhost 页面加载。页面通过查询接口发起请求时，扩展才执行 Cookie 查询。当前版本没有每次查询的额外确认弹窗，匹配页面中的脚本能够发起请求。
 
 扩展使用结果完成已披露的查询与返回功能。扩展代码不调用 Cookie 写入或删除 API。
 
@@ -56,3 +56,4 @@ KS Cookie Bridge 为配套研发网页提供 Cookie 查询能力。匹配页面�
 访问范围、用途或交付方式发生变化时，我们会更新政策和相应商店披露；需要额外告知或授权时，在相关处理前完成。
 
 隐私与支持联系：yaohao971112@gmail.com。
+
